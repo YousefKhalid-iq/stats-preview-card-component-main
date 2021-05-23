@@ -4,6 +4,8 @@
 	box-sizing: content-box;
 }
 
+@media only screen and (min-width: 375px) {
+
 body {
 	background-color: hsl(233, 47%, 7%);
 	padding: 100px 0;
@@ -13,17 +15,21 @@ body {
 	padding-bottom: 10px;
   background-color: hsl(244, 38%, 16%);
   width: 325px;
-  margin: auto auto;
+  margin: auto;
   border-radius: 10px;
 }
 
-.header-image {
+.header-image-mobile {
 	padding-bottom: 20px;
-	margin: auto auto;
+	margin: auto;
 	display: block;
 	width: 325px;
 	height: 250px;
 	border-radius: 10px;
+}
+
+.header-image-desktop {
+	display: none;
 }
 
 h1 {
@@ -85,10 +91,90 @@ h2 {
 	font-size: 12px; 
 	text-align: center; 
 	font-family: 'Inter', sans-serif;
-	color: #BA55D3; 
+	color: #CD9B9B; 
 } 
  .attribution a { 
- 	color: hsl(228, 45%, 44%); 
+ 	color: #C75D4D; 
 }
+
+}
+
+@media only screen and (min-width: 1440px) {
+body {
+	background-color: hsl(233, 47%, 7%);
+	padding: 160px 100px; 
+	
+}
+
+.parent-div {
+	width: 90%;
+}
+
+.header-image-mobile {
+	display: none;
+}
+
+.header-image-desktop {
+	display: block;
+	float: right;
+	border-radius: 0px 10px 10px 0px;
+	width: 50%;
+	
+}
+
+.header-h1 {
+	width: 50%;
+	padding-top: 85px;
+	padding-left: 70px;
+
+}
+
+.header-h1 h1 {
+	width: 60%;
+	text-align: left
+}
+
+.subheader-h2 {
+	width: 50%;
+	padding-top: 10px;
+	padding-left: 50px;
+	
+}
+
+.subheader-h2 h2 {
+	width: 60%;
+	text-align: left;
+}
+
+.ul-all {
+	padding-left: 7%;
+	padding-top: 20px;
+	text-align: left;
+	width: 50%;
+}
+
+.ul-all .list-of-stuff{
+	width: 50%;
+	height: 121px;
+	text-align: left;
+}
+
+.ul-all .list-of-stuff div {
+	float: left;
+	padding: 0 10px;
+	text-align: left;
+}
+
+.ul-div3 .number-items {
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.attribution {
+	text-align: center;
+}
+
+}
+
 
 
