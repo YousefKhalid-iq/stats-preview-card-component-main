@@ -107,7 +107,8 @@ body {
 }
 
 .parent-div {
-	width: 90%;
+	position: relative;
+	width: 1200px;
 }
 
 .header-image-mobile {
@@ -116,10 +117,16 @@ body {
 
 .header-image-desktop {
 	display: block;
-	float: right;
+	
 	border-radius: 0px 10px 10px 0px;
 	width: 50%;
-	
+	height: 100%;
+	position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  float: right;
 }
 
 .header-h1 {
@@ -150,11 +157,13 @@ body {
 	padding-left: 7%;
 	padding-top: 20px;
 	text-align: left;
+	position: relative;
 	width: 50%;
+	bottom: 0;
 }
 
 .ul-all .list-of-stuff{
-	width: 50%;
+	width: 55%;
 	height: 121px;
 	text-align: left;
 }
@@ -171,7 +180,8 @@ body {
 }
 
 .attribution {
-	text-align: center;
+	text-align: left;
+	padding-left: 20px;
 }
 
 }
